@@ -1,12 +1,21 @@
 /*eslint-disable*/
 module.exports = {
-	baseUrl: '/SkeletonPOC/SkeletonAppClient/',
+	baseUrl: '/SkeletonPOC/SkeletonPOCClient/',
 	configureWebpack: (config) => {
 		if (process.env.NODE_ENV === 'production') {
-		// mutate config for production...
+			return {
+				output: {
+					library: "skelpoc",
+					libraryTarget: "umd",
+				}
+			}
 		} else {
 			return {
-				devtool: 'source-map'
+				devtool: 'source-map',
+				output: {
+					library: "skelpoc",
+					libraryTarget: "umd",
+				}
 			}
 		}
 	}

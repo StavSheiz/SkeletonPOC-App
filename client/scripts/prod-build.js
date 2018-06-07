@@ -21,6 +21,8 @@ const path = require('path');
 const chalk = require('chalk');
 const fs = require('fs-extra');
 
+//function buildDir
+
 function copyPublicFolder() {
     fs.copySync(paths.appPublic, paths.appBuild, {
       dereference: true,

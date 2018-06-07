@@ -1,15 +1,3 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
+import stuPoc from "./mainVue";
 
-Vue.config.productionTip = false
-
-module.exports = function skeletonApplication(divId) {
-  new Vue({
-    router,
-    store,
-    render: h => h(App)
-  }).$mount(divId)
-};
-
+stuPoc("#app");

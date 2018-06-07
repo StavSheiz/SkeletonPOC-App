@@ -1,8 +1,22 @@
 <template>
-  <div id="app">
-    <router-view/>
-  </div>
+	<div id="app">
+		<div class="home">
+			<ApplicationHeader msg="Welcome to Your Vue.js App"/>
+		</div>
+	</div>
 </template>
+
+<script>
+// @ is an alias to /src
+import ApplicationHeader from '@/components/ApplicationHeader.vue'
+
+export default {
+  name: 'app',
+  components: {
+    ApplicationHeader
+  }
+}
+</script>
 
 <style lang="less">
 #app {

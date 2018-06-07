@@ -2,10 +2,14 @@
   "name": "skeleton-poc-application-client",
   "version": "0.1.0",
   "private": true,
+  "description": "Application to test the Skeleton POC.",
+  "main": "main.js",
+  "author:": "Stav Sheizaf",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "prod-build": "node ./scripts/prod-build.js"
   },
   "dependencies": {
     "vue": "^2.5.16",

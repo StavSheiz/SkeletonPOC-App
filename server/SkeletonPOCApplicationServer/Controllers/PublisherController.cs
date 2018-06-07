@@ -13,7 +13,15 @@ namespace SkeletonPOCApplicationServer.Controllers
         [HttpGet]
         public JArray GetApplication()
         {
-            return null;
+            JArray arrAppFiles = new JArray();
+
+            string AppJs = System.Configuration.ConfigurationManager.AppSettings.Get("app.js");
+            string AppCss = System.Configuration.ConfigurationManager.AppSettings.Get("app.css");         
+
+            arrAppFiles.Add(new JValue(AppJs));
+            arrAppFiles.Add(new JValue(AppCss));
+
+            return arrAppFiles;
         }
     }
 }

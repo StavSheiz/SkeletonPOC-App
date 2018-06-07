@@ -16,9 +16,11 @@ namespace SkeletonPOCApplicationServer.Controllers
             JArray arrAppFiles = new JArray();
 
             string AppJs = System.Configuration.ConfigurationManager.AppSettings.Get("app.js");
+            string VendorJs = System.Configuration.ConfigurationManager.AppSettings.Get("vendor.js");
             string AppCss = System.Configuration.ConfigurationManager.AppSettings.Get("app.css");         
 
             arrAppFiles.Add(new JValue(AppJs));
+            arrAppFiles.Add(new JValue(VendorJs));
             arrAppFiles.Add(new JValue(AppCss));
 
             return arrAppFiles;

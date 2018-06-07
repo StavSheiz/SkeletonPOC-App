@@ -1,5 +1,5 @@
 {
-  mode: 'development',
+  mode: 'production',
   context: 'C:\\GitProjects\\SkeletonPOC-App\\client',
   devtool: 'source-map',
   node: {
@@ -13,8 +13,9 @@
   },
   output: {
     path: 'C:\\GitProjects\\SkeletonPOC-App\\client\\dist',
-    filename: '[name].js',
+    filename: 'js/skel.js',
     publicPath: '/SkeletonPOC/SkeletonPOCClient/',
+    chunkFilename: 'js/[name].[chunkhash:8].js',
     library: 'skelpoc',
     libraryTarget: 'umd'
   },
@@ -54,7 +55,7 @@
             loader: 'cache-loader',
             options: {
               cacheDirectory: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\.cache\\vue-loader',
-              cacheIdentifier: 'ee67a162'
+              cacheIdentifier: '5bef8ba2'
             }
           },
           {
@@ -64,7 +65,7 @@
                 preserveWhitespace: false
               },
               cacheDirectory: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\.cache\\vue-loader',
-              cacheIdentifier: 'ee67a162'
+              cacheIdentifier: '5bef8ba2'
             }
           }
         ]
@@ -131,16 +132,12 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2,
                   modules: true,
@@ -159,16 +156,12 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2
                 }
@@ -185,16 +178,12 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2,
                   modules: true,
@@ -212,16 +201,12 @@
           {
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2
                 }
@@ -243,16 +228,12 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2,
                   modules: true,
@@ -271,16 +252,12 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2
                 }
@@ -297,16 +274,12 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2,
                   modules: true,
@@ -324,16 +297,12 @@
           {
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 2
                 }
@@ -355,16 +324,12 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -389,16 +354,12 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -421,16 +382,12 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -454,16 +411,12 @@
           {
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -491,16 +444,12 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -526,16 +475,12 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -559,16 +504,12 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -593,16 +534,12 @@
           {
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -631,16 +568,12 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -665,16 +598,12 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -697,16 +626,12 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -730,16 +655,12 @@
           {
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -767,16 +688,12 @@
             resourceQuery: /module/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -802,16 +719,12 @@
             resourceQuery: /\?vue/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -835,16 +748,12 @@
             test: /\.module\.\w+$/,
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3,
                   modules: true,
@@ -869,16 +778,12 @@
           {
             use: [
               {
-                loader: 'vue-style-loader',
-                options: {
-                  sourceMap: false,
-                  shadowMode: false
-                }
+                loader: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\mini-css-extract-plugin\\dist\\loader.js'
               },
               {
                 loader: 'css-loader',
                 options: {
-                  minimize: false,
+                  minimize: true,
                   sourceMap: false,
                   importLoaders: 3
                 }
@@ -910,8 +815,11 @@
             loader: 'cache-loader',
             options: {
               cacheDirectory: 'C:\\GitProjects\\SkeletonPOC-App\\client\\node_modules\\.cache\\babel-loader',
-              cacheIdentifier: 'fde5c6f6'
+              cacheIdentifier: '0f0797e7'
             }
+          },
+          {
+            loader: 'thread-loader'
           },
           {
             loader: 'babel-loader'
@@ -935,7 +843,7 @@
                 '.vue'
               ],
               cache: true,
-              cacheIdentifier: '0edc8c22',
+              cacheIdentifier: '4a9dde8c',
               emitWarning: true,
               formatter: function () { /* omitted long function */ }
             }
@@ -944,6 +852,72 @@
       }
     ]
   },
+  optimization: {
+    minimizer: [
+      {
+        options: {
+          test: /\.js(\?.*)?$/i,
+          warningsFilter: function () {
+                return true;
+              },
+          extractComments: false,
+          sourceMap: true,
+          cache: true,
+          parallel: true,
+          include: undefined,
+          exclude: undefined,
+          uglifyOptions: {
+            output: {
+              comments: /^\**!|@preserve|@license|@cc_on/
+            },
+            compress: {
+              arrows: false,
+              collapse_vars: false,
+              comparisons: false,
+              computed_props: false,
+              hoist_funs: false,
+              hoist_props: false,
+              hoist_vars: false,
+              inline: false,
+              loops: false,
+              negate_iife: false,
+              properties: false,
+              reduce_funcs: false,
+              reduce_vars: false,
+              switches: false,
+              toplevel: false,
+              typeofs: false,
+              booleans: true,
+              if_return: true,
+              sequences: true,
+              unused: true,
+              conditionals: true,
+              dead_code: true,
+              evaluate: true
+            },
+            mangle: {
+              safari10: true
+            }
+          }
+        }
+      }
+    ],
+    splitChunks: {
+      chunks: 'all',
+      name: (m, chunks, cacheGroup) => `chunk-${cacheGroup}`,
+      cacheGroups: {
+        vendors: {
+          test: /[\\\/]node_modules[\\\/]/,
+          priority: -10
+        },
+        common: {
+          minChunks: 2,
+          priority: -20,
+          reuseExistingChunk: true
+        }
+      }
+    }
+  },
   plugins: [
     /* config.plugin('vue-loader') */
     new VueLoaderPlugin(),
@@ -951,7 +925,7 @@
     new DefinePlugin(
       {
         'process.env': {
-          NODE_ENV: '"development"',
+          NODE_ENV: '"production"',
           BASE_URL: '"/SkeletonPOC/SkeletonPOCClient/"'
         }
       }
@@ -969,16 +943,38 @@
         ]
       }
     ),
-    /* config.plugin('hmr') */
-    new HotModuleReplacementPlugin(),
-    /* config.plugin('no-emit-on-errors') */
-    new NoEmitOnErrorsPlugin(),
-    /* config.plugin('progress') */
-    new ProgressPlugin(),
+    /* config.plugin('extract-css') */
+    new MiniCssExtractPlugin(
+      {
+        filename: 'css/[name].[contenthash:8].css',
+        chunkFilename: 'css/[name].[contenthash:8].css'
+      }
+    ),
+    /* config.plugin('optimize-css') */
+    new OptimizeCssAssetsWebpackPlugin(
+      {
+        canPrint: false,
+        cssProcessorOptions: {
+          safe: true,
+          autoprefixer: {
+            disable: true
+          },
+          mergeLonghand: false
+        }
+      }
+    ),
+    /* config.plugin('hash-module-ids') */
+    new HashedModuleIdsPlugin(),
     /* config.plugin('html') */
     new HtmlWebpackPlugin(
       {
         templateParameters: function () { /* omitted long function */ },
+        minify: {
+          removeComments: true,
+          collapseWhitespace: true,
+          removeAttributeQuotes: true
+        },
+        chunksSortMode: 'dependency',
         template: 'C:\\GitProjects\\SkeletonPOC-App\\client\\public\\index.html'
       }
     ),

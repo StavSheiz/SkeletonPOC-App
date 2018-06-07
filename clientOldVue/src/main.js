@@ -6,7 +6,7 @@ import Vue from "vue";
 import App from "./App.vue";
 import store from "./store";
 
-var skeletonApplication = divId => {
+var inter = divId => {
   Vue.config.productionTip = false;
   return new Vue({
     store,
@@ -14,6 +14,6 @@ var skeletonApplication = divId => {
   }).$mount(divId);
 };
 
-export { skeletonApplication };
+export { inter };
 
 // export var a = "jibrish daled";

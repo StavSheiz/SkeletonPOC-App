@@ -11,17 +11,17 @@ namespace SkeletonPOCApplicationServer.Controllers
     public class PublisherController : ApiController
     {
         [HttpGet]
-        public JArray GetApplication()
+        public JObject GetApplication()
         {
-            JArray arrAppFiles = new JArray();
+            JObject arrAppFiles = new JObject();
 
             string AppJs = System.Configuration.ConfigurationManager.AppSettings.Get("app.js");
             string VendorJs = System.Configuration.ConfigurationManager.AppSettings.Get("vendor.js");
-            string AppCss = System.Configuration.ConfigurationManager.AppSettings.Get("app.css");         
+            string AppCss = System.Configuration.ConfigurationManager.AppSettings.Get("app.css");
 
-            arrAppFiles.Add(new JValue(AppJs));
-            arrAppFiles.Add(new JValue(VendorJs));
-            arrAppFiles.Add(new JValue(AppCss));
+            arrAppFiles["app"] = AppJs;
+            arrAppFiles["vendor"] = VendorJs;
+            arrAppFiles["css"] = AppCss;
 
             return arrAppFiles;
         }

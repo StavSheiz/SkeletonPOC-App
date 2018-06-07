@@ -7,6 +7,10 @@ module.exports = {
 				output: {
 					library: "skelpoc",
 					libraryTarget: "umd",
+					filename: 'js/skel.js'
+				},
+				optimization: {
+					minimizer: []
 				}
 			}
 		} else {
@@ -15,6 +19,7 @@ module.exports = {
 				output: {
 					library: "skelpoc",
 					libraryTarget: "umd",
+					filename: 'js/skel.js'
 				}
 			}
 		}
